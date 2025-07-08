@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>New app</title>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone bg-gray-600">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display text-white grid place-content-center">
+          <!-- Balance -->
+          <section class="flex gap-42 text-2xl">
+            <div class="bg-orange-400 ">
+              <div id="total-many">45000</div>
+              <h2 class="text-sm">Available Balance</h2>
+            </div>
+            <div class="text-xl font-bold">Log Out</div>
+          </section>
+          <div class="divider"></div>
+          <br />
+          <!-- button -->
+          <section class="grid grid-cols-2">
+            <button class="btn btn-outline btn-info">Add Money</button>
+            <button class="btn btn-outline btn-success">Cashout</button>
+            <button class="btn btn-outline btn-warning">Pay Bill</button>
+            <button class="btn btn-outline btn-error">Transactions</button>
+          </section>
+          <div class="divider"></div>
+          <br />
+          <!-- From -->
+          <section>
+            <h2>Transfer Money</h2>
+            <form>
+              <fieldset class="fieldset">
+                <label class="label">Amount</label>
+                <input id="input-addmany" type="text" class="input text-black" placeholder="Enter amount to transfer " />
+                <label class="label">Pin Number</label>
+                <input id="input-pin" type="password" class="input text-black " placeholder="Password" autocomplete="off" />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="log-in" class="btn btn-neutral mt-4">Login</button>
+              </fieldset>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="js/java-1.js"></script>
+  </body>
+</html>
