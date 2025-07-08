@@ -1,0 +1,9 @@
+document.getElementById('add-many-from').addEventListener('click',function(){
+    openfrom('cashin-from')
+})
+document.getElementById('caash-out-from').addEventListener('click',function(){
+    openfrom('caashout-from')
+})
+document.getElementById('Transactions-from').addEventListener('click',function(){
+    openfrom('Tranactionfrom')
+})

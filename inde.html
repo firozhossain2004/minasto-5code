@@ -18,25 +18,24 @@
         <div class="mockup-phone-display text-white grid place-content-center">
           <!-- Balance -->
           <section class="flex gap-42 text-2xl">
-            <div class="bg-orange-400 ">
+            <div class="bg-orange-400 h-15 w-30 text-center ">
               <div id="total-many">45000</div>
               <h2 class="text-sm">Available Balance</h2>
             </div>
-            <div class="text-xl font-bold">Log Out</div>
+            <div class="text-xl font-bold text-rose-400">Log Out</div>
           </section>
           <div class="divider"></div>
           <br />
           <!-- button -->
           <section class="grid grid-cols-2">
-            <button class="btn btn-outline btn-info">Add Money</button>
-            <button class="btn btn-outline btn-success">Cashout</button>
-            <button class="btn btn-outline btn-warning">Pay Bill</button>
-            <button class="btn btn-outline btn-error">Transactions</button>
+            <button id="add-many-from" class="btn btn-outline btn-info">Add Money</button>
+            <button id="caash-out-from" class="btn btn-outline btn-success">Cashout</button>
+            <button id="Transactions-from" class="btn btn-outline btn-error">Transactions</button>
           </section>
           <div class="divider"></div>
           <br />
           <!-- From -->
-          <section>
+          <section id="cashin-from" >
             <h2>Transfer Money</h2>
             <form>
               <fieldset class="fieldset">
@@ -45,13 +44,37 @@
                 <label class="label">Pin Number</label>
                 <input id="input-pin" type="password" class="input text-black " placeholder="Password" autocomplete="off" />
                 <div><a class="link link-hover">Forgot password?</a></div>
-                <button id="log-in" class="btn btn-neutral mt-4">Login</button>
+                <button id="log-in" class="btn btn-neutral mt-4">Send Many</button>
               </fieldset>
             </form>
+          </section>
+         
+          <!-- cash out From -->
+           <section id="caashout-from" class="hidden">
+            <h2>Transfer Money</h2>
+            <form>
+              <fieldset class="fieldset">
+                <label class="label">Amount</label>
+                <input id="input-cash-out" type="text" class="input text-black" placeholder="Enter amount to transfer " />
+                <label class="label">Pin Number</label>
+                <input id="input-pin-cashout" type="password" class="input text-black " placeholder="Password" autocomplete="off" />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="caash-out" class="btn btn-neutral mt-4">Cash Out</button>
+              </fieldset>
+            </form>
+          </section >
+          <section id="Tranactionfrom" class="hidden">
+            <h2 class="text-6xl bg-red-400 text-center">Tranaction</h2>
+            <div id="contioner">
+
+            </div>
           </section>
         </div>
       </div>
     </main>
-    <script src="js/java-1.js"></script>
+    <script src="js/button-fe.js"></script>
+    <script src="js/libre.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/addMany.js"></script>
   </body>
 </html>
